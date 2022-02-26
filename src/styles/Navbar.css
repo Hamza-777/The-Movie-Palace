@@ -1,0 +1,36 @@
+.navbar {
+    padding: 0.75rem 1rem;
+    background: var(--dark-color);
+    color: var(--white-color);
+}
+
+.logo {
+    font-family: var(--font-tangerine);
+    font-size: 2.5rem;
+}
+
+.search {
+    gap: 1rem;
+    background: var(--white-color);
+    color: var(--black-color);
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+}
+
+.magnifier {
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: var(--default-transition);
+}
+
+.magnifier:hover {
+    transform: scale(1.1);
+}
+
+.searchbar {
+    border: none;
+    outline: none;
+    font-size: 1.25rem;
+    padding: 0.5rem;
+    width: 25rem;
+}

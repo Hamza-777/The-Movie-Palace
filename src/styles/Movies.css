@@ -1,0 +1,14 @@
+.movies {
+    gap: 3rem 5rem;
+    margin: 5rem 1rem;
+}
+
+@keyframes rise {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+  }
