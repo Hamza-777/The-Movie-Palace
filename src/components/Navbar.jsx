@@ -9,7 +9,7 @@ const Navbar = ({ getParams }) => {
 
     return (
         <Fragment>
-            <nav className='navbar flex-center justify-evenly'>
+            <nav className='navbar flex-center flex-row-wrap justify-evenly'>
                 <div className='navbar-left'>
                     <h1 className='logo'>The Movie Palace</h1>
                 </div>

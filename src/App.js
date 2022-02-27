@@ -1,20 +1,20 @@
 import React, { useState, useEffect } from 'react';
-import { makeRequest } from './request';
-import { links } from './links';
+import { makeRequest } from './request.js';
+import { links } from './links.js';
 import './App.css';
 import Navbar from './components/Navbar';
 import Movies from './components/Movies';
 import './styles/global.css';
 
 function App() {
-  const [ movies, getMovies ] = useState('');
+  const [ movies, setMovies ] = useState('');
   const [ link, setLink ] = useState(links.fetchTrending);
   const [ params, setParams ] = useState('');
   const [ showing, setShowing ] = useState('trending');
 
   useEffect(() => {
     (async (e) => {
-      getMovies(await makeRequest(link));
+      setMovies(await makeRequest(link));
     })();
   }, [movies, link]);
 
@@ -26,7 +26,7 @@ function App() {
   return (
     <div className="App">
       <Navbar getParams={getParams} />
-      <section className='options flex-center' >
+      <section className='options flex-center flex-row-wrap' >
         <button 
           className='btn' 
           id={showing === 'trending' ? 'active' : ''} 

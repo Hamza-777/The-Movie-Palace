@@ -13,7 +13,7 @@ const MovieCard = ({ poster, title, overview, rating, date }) => {
                     <p className='overview'>{overview}</p>
                     <div className='misc flex-center justify-between'>
                         <p className='h5 date'>{date.slice(0,4)}</p>
-                        <p className='h5 rating'>{rating}</p>
+                        <p className='h5 rating'><i className='fas fa-star'></i> {rating}</p>
                     </div>
                 </div>
             </div>
